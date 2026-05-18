@@ -1,0 +1,26 @@
+### Create Employee
+POST http://localhost:4000/employee-api
+Content-Type: application/json
+
+{
+    "name": "John ",
+    "email": "john.doe@example.com",
+    "mobile": "1234567890",
+    "designation": "Software Engineer",
+    "companyName": "Tech Corp"
+}
+
+### Get All Employees
+GET http://localhost:4000/employee-api
+
+### Edit Employee (Update ID first)
+PUT http://localhost:4000/employee-api/<ID_HERE>
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "designation": "Senior Software Engineer"
+}
+
+### Delete Employee (Update ID first)
+DELETE http://localhost:4000/employee-api/<ID_HERE>
