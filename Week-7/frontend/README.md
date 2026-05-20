@@ -1,16 +1,86 @@
-# React + Vite
+# FrontEnd Overview
+## Technologies Used
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- React JS
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Zustand
+- Axios
 
-Currently, two official plugins are available:
+## Frontend Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+FrontEnd\
+│\
+├── public\
+│\
+├── src\
+│   ├── assets\
+│   │\
+│   ├── components\
+│   │   ├── AdminProfile.jsx\
+│   │   ├── ArticleByID.jsx\
+│   │   ├── Articles.jsx\
+│   │   ├── AuthorArticles.jsx\
+│   │   ├── AuthorProfile.jsx\
+│   │   ├── AuthorsList.jsx\
+│   │   ├── EditArticle.jsx\
+│   │   ├── Footer.jsx\
+│   │   ├── Header.jsx\
+│   │   ├── Home.jsx\
+│   │   ├── Login.jsx\
+│   │   ├── ProtectedRoute.jsx\
+│   │   ├── Register.jsx\
+│   │   ├── RootComponent.jsx\
+│   │   ├── Unauthorized.jsx\
+│   │   ├── UserProfile.jsx\
+│   │   └── WriteArticles.jsx\
+│   │\
+│   ├── stores\
+│   │   └── authStore.js\
+│   │\
+│   ├── styles\
+│   │   └── common.jsx\
+│   │\
+│   ├── App.jsx\
+│   ├── index.css\
+│   └── main.jsx\
+│\
+├── .env\
+├── .gitignore\
+├── eslint.config.js\
+├── index.html\
+├── package.json\
+├── vite.config.js\
+└── README.md
+## Installation Steps
 
-## React Compiler
+### Step 1: Install Dependencies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install react-router-dom axios zustand tailwindcss
+```
+### Step 2: Create `.env` File
 
-## Expanding the ESLint configuration
+```env
+VITE_API_URL=your_backend_url
+```
+### Step 3: Start Development Server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+## To Deploy
+### Use Vercel To Deploy Frontend
+``` bash
+Step 1 : Login to Render Webiste (https://vercel.com/)
+Step 2 : Click on ADD New
+Step 3 : Click on Project
+Step 4 : Connect your Git To it and select The file
+Step 5 :  Root Directiory : Frontend File
+Step 6 : Add Environment Variables
+-VITE_API_URL=your_backend_url(Deployed Render link)
+Step 7 : Deploy
+```
+### After Deployment connect the frontend link in backend server.js at cors and redeploy the backend in render then frontend 
+To access the data and backend we connect
