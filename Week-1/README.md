@@ -4,7 +4,7 @@ Welcome to the **Week-1** repository! This folder contains foundational JavaScri
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ### Day 1 Assignments (`Day1.js/`)
 This folder contains various scripts designed to reinforce basic programming constructs in JavaScript, such as conditionals, loops, functions, and array traversal.
@@ -36,7 +36,7 @@ This folder focuses on more complex data structures, specifically arrays of obje
 
 ---
 
-## 🚀 How to Run the Code
+##  How to Run the Code
 
 Make sure you have [Node.js](https://nodejs.org/) installed on your machine. You can run any of the assignment files directly from your terminal using the `node` command.
 
