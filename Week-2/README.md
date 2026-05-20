@@ -6,9 +6,9 @@ Below is a detailed breakdown of the assignments and projects completed during D
 
 ---
 
-## 📂 Folder Structure & Details
+##  Folder Structure & Details
 
-### 🌟 Day 3: Advanced Array Methods & ES6 Modules (`Day3.js/`)
+###  Day 3: Advanced Array Methods & ES6 Modules (`Day3.js/`)
 Day 3 focuses heavily on higher-order array functions (`map`, `filter`, `reduce`, `forEach`) and organizing code into multiple files using ES6 Module syntax (`import` / `export`).
 
 **Key Assignments:**
@@ -20,7 +20,7 @@ Day 3 focuses heavily on higher-order array functions (`map`, `filter`, `reduce`
 *   **`Day3AssignmentQ8(Bank-Transaction-Analyzer).js`**: Analyzes a sequence of deposits and withdrawals to calculate the final bank balance.
 *   **`e-commerce system/` & `app.js`**: Demonstrates the use of ES6 modules (`import`/`export`) by splitting validation, tasks, and core logic into multiple files (`module1.js`, `module2.js`, `validator.js`).
 
-### 🌟 Day 4: Modern ES6 Syntax, Copying & Asynchronous JS (`Day4.js/`)
+###  Day 4: Modern ES6 Syntax, Copying & Asynchronous JS (`Day4.js/`)
 Day 4 tackles some of the trickiest concepts in JavaScript: Spread/Rest operators, object copying (Shallow vs. Deep copy), and timing events (`setTimeout`, `setInterval`).
 
 **Key Assignments:**
@@ -32,7 +32,7 @@ Day 4 tackles some of the trickiest concepts in JavaScript: Spread/Rest operator
 *   **`Day4AssignmentQ7(Exam-Portal-Simulator).js`**: Uses `setTimeout` to simulate an exam portal that auto-submits after a specific duration.
 *   **`Day4AssignmentQ8(OTP-Countdown-Simulator).js`**: Uses `setInterval` to create a countdown timer for an OTP, clearing the interval when it reaches zero.
 
-### 🌟 Day 5: Introduction to Node.js & Express.js (`Day5.js/`)
+###  Day 5: Introduction to Node.js & Express.js (`Day5.js/`)
 Day 5 is a massive leap into building RESTful APIs using **Express.js**. It establishes a modular backend architecture.
 
 **Key Concepts & Files:**
@@ -48,7 +48,7 @@ Day 5 is a massive leap into building RESTful APIs using **Express.js**. It esta
 
 ---
 
-## 🚀 How to Run the Code
+##  How to Run the Code
 
 ### Running Day 3 & Day 4 Scripts
 You can run any JavaScript file via the terminal using Node.js:
