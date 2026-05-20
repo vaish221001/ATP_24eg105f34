@@ -6,12 +6,12 @@ A backend RESTful API built with Node.js, Express.js, and MongoDB. This project 
 
 This repository is organized into a standard Model-View-Controller (MVC) like structure for clarity and maintainability.
 
-### 📁 Root Directory
+###  Root Directory
 - **`server.js`**: The main entry point of the Express application. It configures middlewares (like `express.json` and `cookie-parser`), establishes a connection to the MongoDB database, sets up routes for users and products, and includes global error handling.
 - **`package.json`** & **`package-lock.json`**: Defines project dependencies (Express, Mongoose, bcryptjs, jsonwebtoken, cookie-parser) and metadata.
 - **`req.http`**: A helpful file containing example HTTP requests. Use it with the "REST Client" extension in VS Code to test API endpoints manually (similar to using Postman).
 
-### 📁 APIs
+###  APIs
 - **`userAPI.js`**: Contains the routes and controllers for user-related operations:
   - User registration (hashing passwords with `bcryptjs`).
   - User login (authenticating and generating JWT tokens).
@@ -21,14 +21,14 @@ This repository is organized into a standard Model-View-Controller (MVC) like st
   - CRUD operations for products (Create, Read all, Read by ID, Update, Delete).
   - All routes (except read all products depending on requirements) are protected by a JWT verification middleware.
 
-### 📁 Models
+###  Models
 - **`userModel.js`**: Defines the Mongoose schema for the User resource, detailing fields like email, password, and the shopping cart array.
 - **`productModel.js`**: Defines the Mongoose schema for the Product resource, including `productId`, `productName`, `price`, and `brand`.
 
-### 📁 Middlewares
+###  Middlewares
 - **`verifyToken.js`**: A custom security middleware that protects private routes. It intercepts requests, extracts the JWT from the cookies (or headers), and verifies it. If valid, the request proceeds; otherwise, it returns an unauthorized error.
 
-### 📁 Auth
+###  Auth
 - **`auth.js`**: Directory containing utility functions and configuration related to authentication mechanisms.
 
 ## Tech Stack
