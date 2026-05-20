@@ -1,0 +1,80 @@
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Table 1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table1 {
+    width: 700px;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+.table1 th, .table1 td {
+    padding: 10px;
+    border: 3px solid #333;
+    text-align: center;
+}
+
+/* Table 2 */
+.table2 {
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    background-color: white;
+}
+.table2 th, .table2 td {
+    border: 1px solid black;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+}
+
+/* Table 3 */
+.table3 {
+    width: 1000px;
+    height: 600px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 9px 9px 25px rgb(30, 142, 207);
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.table3 th, .table3 td {
+    width: 20%;
+    padding: 17px;
+    border: 3px solid rgb(24, 179, 226);
+}
+
+.table3 .main-header {
+    background-color: rgb(161, 221, 247);
+}
+
+.table3 .col-header th {
+    background-color: rgb(184, 218, 232);
+}
+
+.table3 td {
+    background-color: aliceblue;
+}
+
+.table3 img {
+    width: 100px;
+    border-radius: 80px;
+}
+
+.table3 tbody tr:nth-child(even) td {
+    background-color: rgb(210, 235, 250);
+}
+
+.oter {
+  font-weight: bold;
+}

@@ -1,0 +1,108 @@
+//server sends the request
+GET  http://localhost:4000/user-api/users
+
+###
+//Read a user by id 
+GET http://localhost:4000/user-api/users/
+
+###
+//the client sends the request 
+POST  http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+   "username":"Balaji",
+   "password":"Balaji",
+   "email":"abc@gmail.com",
+   "age":20
+
+}
+
+###
+
+POST  http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+
+{
+   "email":"abc@gmail.com",
+   "password":"Balaji"
+}
+
+
+//before add, first it should check that product is already in the cart
+//if the product is there,then increment count by 1
+//otherwise addd that product to cart
+ 
+
+
+### Add product to cart
+PUT http://localhost:4000/user-api/cart/product-id/69b255baed56af2990570815
+Content-Type: application/json
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJpYXQiOjE3NzMyOTYyOTIsImV4cCI6MTc3MzMwNjI5Mn0.wTGuoVvw0eORlkR9BuzgfQ74c8V42UfsWsuKY7UHtfo; Path=/; HttpOnly; SameSite=Lax
+
+{
+
+}
+
+###
+
+### Get all users
+GET  http://localhost:4000/user-api/cart/product-id/69b25d5b474cce8f01af83ff
+Content-Type: application/json
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJpYXQiOjE3NzMyOTYyOTIsImV4cCI6MTc3MzMwNjI5Mn0.wTGuoVvw0eORlkR9BuzgfQ74c8V42UfsWsuKY7UHtfo; Path=/; HttpOnly; SameSite=Lax
+
+####
+//update the resorce
+PUT  http://localhost:4000/user-api/users/abc@gmail.com
+Content-Type: application/json
+
+{
+ "username":"Balaji",
+   "password":"9876",
+   "email":"srinivas@gmail.com",
+   "age":24
+}
+
+###
+DELETE http://localhost:4000/user-api/users/69aa735caa17d1c581e1c88b
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+###
+
+//the client sends the request 
+POST  http://localhost:4000/product-api/product 
+Content-Type: application/json
+
+{
+ "productId":1,
+ "productName":"watch",
+ "price":20000,
+ "brand":"Rolex"
+}
+
+###
+//server sends the request 
+GET http://localhost:4000/product-api/product 
+
+
+###
+//Read a user by id 
+GET http://localhost:4000/product-api/product/69abab70338682cbf4d6343d
+
+###
+//update the resorce
+PUT  http://localhost:4000/product-api/product/69abab70338682cbf4d6343d
+Content-Type: application/json
+
+{
+  "productId":2,
+ "productName":"belts",
+ "price":20000,
+ "brand":"raymond"
+}
+
+###
+DELETE http://localhost:4000/product-api/product/69abab70338682cbf4d6343d
